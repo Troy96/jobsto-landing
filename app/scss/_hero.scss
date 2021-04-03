@@ -1,0 +1,61 @@
+.hero {
+    background-color: $very-light-gray;
+
+    .container {
+        @include breakpoint-up(large) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+
+
+    &__image {
+        background-image: url('/images/bg-interview.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 17.5rem;
+
+        @include breakpoint-up(medium) {
+            height: 31rem;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 3;
+            order: 2;
+            height: 41rem;
+        }
+
+
+
+
+    }
+
+    &__text {
+        text-align: center;
+
+        h1 {
+            font-weight: 300;
+            font-size: 2.31rem;
+            line-height: 1.2;
+            color: $dark-blue;
+            margin-bottom: 1.5rem;
+
+            @include breakpoint-up(large) {
+                font-size: $font-xlg;
+            }
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 2.25rem;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 2;
+            order: 1;
+            text-align: left;
+        }
+    }
+}
