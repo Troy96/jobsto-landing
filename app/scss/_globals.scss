@@ -116,6 +116,7 @@ a:hover {
         padding-bottom: 2.25rem;
 
         @include breakpoint-up(large) {
+            padding-top: 6rem;
             padding-bottom: 6rem;
         }
     }
